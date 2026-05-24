@@ -14,4 +14,3 @@ describe("shared locale registry", () => {
     expect(dateLocale(locale)).toBeDefined();
   });
 });
-
