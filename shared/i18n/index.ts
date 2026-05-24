@@ -100,6 +100,26 @@ export const languageOptions: LanguageOption[] = [
     label: "Tiếng Việt (Vietnamese)",
     value: "vi_VN",
   },
+  {
+    label: "Català (Catalan)",
+    value: "ca_ES",
+  },
+  {
+    label: "Dansk (Danish)",
+    value: "da_DK",
+  },
+  {
+    label: "Bahasa Indonesia (Indonesian)",
+    value: "id_ID",
+  },
+  {
+    label: "Română (Romanian)",
+    value: "ro_RO",
+  },
+  {
+    label: "ไทย (Thai)",
+    value: "th_TH",
+  },
 ];
 
 export const languages = languageOptions.map((i) => i.value);
