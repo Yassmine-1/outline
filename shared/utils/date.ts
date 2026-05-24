@@ -11,8 +11,6 @@ import {
   parse,
 } from "date-fns";
 import {
-  ca,
-  da,
   cs,
   de,
   enGB,
@@ -20,7 +18,6 @@ import {
   es,
   faIR,
   fr,
-  id,
   he,
   hu,
   it,
@@ -31,9 +28,7 @@ import {
   ptBR,
   pt,
   pl,
-  ro,
   sv,
-  th,
   tr,
   vi,
   uk,
@@ -264,8 +259,6 @@ export function getCurrentDateTimeAsString(locale?: Intl.LocalesArgument) {
 }
 
 const locales = {
-  ca_ES: ca,
-  da_DK: da,
   cs_CZ: cs,
   de_DE: de,
   en_GB: enGB,
@@ -273,7 +266,6 @@ const locales = {
   es_ES: es,
   fa_IR: faIR,
   fr_FR: fr,
-  id_ID: id,
   he_IL: he,
   hu_HU: hu,
   it_IT: it,
@@ -284,9 +276,7 @@ const locales = {
   pt_BR: ptBR,
   pt_PT: pt,
   pl_PL: pl,
-  ro_RO: ro,
   sv_SE: sv,
-  th_TH: th,
   tr_TR: tr,
   uk_UA: uk,
   vi_VN: vi,

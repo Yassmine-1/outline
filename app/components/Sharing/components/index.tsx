@@ -26,7 +26,7 @@ export const StyledInfoIcon = styled(InfoIcon).attrs({
   size: 18,
 })`
   vertical-align: bottom;
-  margin-right: 2px;
+  margin-inline-end: 2px;
   flex-shrink: 0;
 `;
 
@@ -36,7 +36,9 @@ export const ShareLinkInput = styled(Input)`
   flex: 1;
 
   ${NativeInput}:not(:first-child) {
-    padding: 4px 8px 4px 0;
+    padding-block: 4px;
+    padding-inline-start: 0;
+    padding-inline-end: 8px;
     flex: 1;
   }
 `;
@@ -47,7 +49,9 @@ export const UnderlinedLink = styled(Link)`
 `;
 
 export const DomainPrefix = styled.span`
-  padding: 0 2px 0 8px;
+  padding-block: 0;
+  padding-inline-start: 8px;
+  padding-inline-end: 2px;
   flex: 0 1 auto;
   cursor: text;
   color: ${s("placeholder")};
@@ -63,16 +67,14 @@ export const HeaderInput = styled(Flex)`
   border-bottom: 1px solid ${s("inputBorder")};
   padding: 0 24px 12px;
   margin-top: 0;
-  margin-left: -24px;
-  margin-right: -24px;
-  margin-bottom: 12px;
+  margin-inline: -24px;
+  margin-block-end: 12px;
   cursor: text;
 
   &:before {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
+    inset-inline: 0;
     top: -20px;
     height: 20px;
     background: ${s("menuBackground")};
@@ -83,12 +85,12 @@ export const presence = {
   initial: {
     opacity: 0,
     width: 0,
-    marginRight: 0,
+    marginInlineEnd: 0,
   },
   animate: {
     opacity: 1,
     width: "auto",
-    marginRight: 8,
+    marginInlineEnd: 8,
     transition: {
       type: "spring",
       duration: 0.2,
@@ -98,6 +100,6 @@ export const presence = {
   exit: {
     opacity: 0,
     width: 0,
-    marginRight: 0,
+    marginInlineEnd: 0,
   },
 };
